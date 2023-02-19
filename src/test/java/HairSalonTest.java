@@ -28,7 +28,7 @@ class HairSalonTest {
 
     @Test
     public void testExceptionIsThrownIfWeekdayDoesNotEndInDay() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> hairSalon.isOpen("January"));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> hairSalon.isOpen("Hello"));
 
         String expected = "The weekday argument must end in the letters 'day'";
 
