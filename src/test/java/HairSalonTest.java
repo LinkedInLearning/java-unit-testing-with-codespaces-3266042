@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 class HairSalonTest {
 
@@ -27,11 +28,23 @@ class HairSalonTest {
 
     @Test
     public void testExceptionIsThrownIfWeekdayDoesNotEndInDay() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> hairSalon.isOpen("January"));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> hairSalon.isOpen("Hello"));
 
         String expected = "The weekday argument must end in the letters 'day'";
 
         String actual = exception.getMessage();
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testHalfPriceDiscount() {
+        int expected = 20;
+
+        int actual = hairSalon.applyDiscount();
+
+        Calculator calculator = new Calculator();
+        assumeTrue(calculator.divide(hairSalon.getHaircutPrice(), 2) == 15);
 
         assertEquals(expected, actual);
     }
