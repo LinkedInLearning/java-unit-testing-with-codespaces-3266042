@@ -9,32 +9,26 @@ class HairSalonTest {
 
     @Test
     public void testGetOpeningDays() {
-        String[] expected = new String[]{"Monday", "Tuesday"};
+        HairSalon.Day[] expected = new HairSalon.Day[]{HairSalon.Day.MONDAY, HairSalon.Day.TUESDAY};
 
-        String[] actual = hairSalon.getOpeningDays();
+        HairSalon.Day[] actual = hairSalon.getOpeningDays();
 
         assertArrayEquals(expected, actual);
     }
 
     @Test
     public void testSalonIsOpenOnMonday() {
-        assertTrue(hairSalon.isOpen("Monday"));
+        assertTrue(hairSalon.isOpen(HairSalon.Day.MONDAY));
     }
 
     @Test
     public void testSalonIsClosedOnWednesday() {
-        assertFalse(hairSalon.isOpen("Wednesday"));
+        assertFalse(hairSalon.isOpen(HairSalon.Day.WEDNESDAY));
     }
 
     @Test
-    public void testExceptionIsThrownIfWeekdayDoesNotEndInDay() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> hairSalon.isOpen("January"));
-
-        String expected = "The weekday argument must end in the letters 'day'";
-
-        String actual = exception.getMessage();
-
-        assertEquals(expected, actual);
+    public void testNull() {
+        assertFalse(hairSalon.isOpen(null));
     }
 
     @Test
