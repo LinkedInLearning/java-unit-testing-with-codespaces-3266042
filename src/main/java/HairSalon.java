@@ -2,6 +2,9 @@ import java.util.Arrays;
 
 public class HairSalon {
 
+    private int haircutPrice = 30;
+    private Calculator calculator = new Calculator();
+
     private String[] openingDays = {"Monday", "Tuesday"};
 
     // This method should return the openingDays array.
@@ -21,6 +24,14 @@ public class HairSalon {
         } else {
             return false;
         }
+    }
+
+    public int getHaircutPrice() {
+        return haircutPrice;
+    }
+
+    public int applyDiscount() {
+        return calculator.divide(haircutPrice, 2) + 5;
     }
     
 }
