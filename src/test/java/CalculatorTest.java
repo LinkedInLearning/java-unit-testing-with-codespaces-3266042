@@ -56,4 +56,14 @@ public class CalculatorTest {
         assertFalse(actual);
     }
 
+    @Test
+    public void testIncrementArray() {
+        int[] expected = new int[]{2, 3, 4};
+
+        int[] actual = calculator.incrementArray(new int[]{1, 2, 3});
+
+        assertArrayEquals(expected, actual);
+    }
+
+
 }
