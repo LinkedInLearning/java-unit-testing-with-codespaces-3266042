@@ -20,5 +20,5 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.fontAliasing": "antialiased",
- "java.server.launchMode": "Standard"
+  "java.server.launchMode": "Standard"
 }
