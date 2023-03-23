@@ -1,7 +1,7 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Java Unit Testing with Codespaces
+This is the repository for the LinkedIn Learning course `Java Unit Testing with Codespaces`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url] 
+![Java Unit Testing with Codespaces][lil-thumbnail-url] 
 
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
