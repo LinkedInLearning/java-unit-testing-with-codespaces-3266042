@@ -1,9 +1,14 @@
-# Java Unit Testing with Codespaces
-This is the repository for the LinkedIn Learning course `Java Unit Testing with Codespaces`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Java: Practice Unit Testing
+This is the repository for the LinkedIn Learning course Java: Practice Unit Testing. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![Java Unit Testing with Codespaces][lil-thumbnail-url] 
+![Java: Practice Unit Testing][lil-thumbnail-url] 
 
-_See the readme file in the main branch for updated instructions and information._
+The beauty of test-driven development is that it allows you to iterate your codebase one step at a time, testing and reworking individual cases as you go. Not only does this reduce the likelihood of bugs and errors, it also helps you write more effective and more reliable code.
+
+In this course, instructor Bethan Palmer covers the essentials of unit testing in Java to showcase the benefits of test-driven development. Explore practical topics including common assertions, comparing arrays, and testing exceptions as well as some of the more advanced features of JUnit, the Java unit testing framework that lets you run parameterized tests. Along the way, take advantage of the opportunity to practice writing your own unit tests with hands-on, interactive coding exercises in GitHub Codespaces.
+
+
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -29,8 +34,15 @@ To resolve this issue:
 3. [Course-specific instructions]
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+Bethan Palmer 
+                            
+Software Developer
 
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/bethan-palmer).
+
+[lil-course-url]: https://www.linkedin.com/learning/java-practice-unit-testing?dApp=59033956&leis=LAA
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQG64CVbQvghgw/learning-public-crop_288_512/0/1682710101423?e=2147483647&v=beta&t=T9hyFxJmfPX1w1oqV7Nyy-ph9XukOqwycWKoB1TZRR8
