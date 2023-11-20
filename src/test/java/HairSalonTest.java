@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
@@ -16,14 +18,16 @@ class HairSalonTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test
-    public void testSalonIsOpenOnMonday() {
-        assertTrue(hairSalon.isOpen(HairSalon.Day.MONDAY));
+    @ParameterizedTest
+    @EnumSource(value = HairSalon.Day.class, names = { "MONDAY", "TUESDAY" })
+    public void testSalonIsOpenOnMonday(HairSalon.Day day) {
+        assertTrue(hairSalon.isOpen(day));
     }
 
-    @Test
-    public void testSalonIsClosedOnWednesday() {
-        assertFalse(hairSalon.isOpen(HairSalon.Day.WEDNESDAY));
+    @ParameterizedTest
+    @EnumSource(value = HairSalon.Day.class, names = { "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY" })
+    public void testSalonIsClosed(HairSalon.Day day) {
+        assertFalse(hairSalon.isOpen(day));
     }
 
     @Test
