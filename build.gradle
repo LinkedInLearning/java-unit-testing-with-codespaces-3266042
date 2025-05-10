@@ -8,3 +8,17 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testImplementation 'org.mockito:mockito-core:5.4.0'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.4.0'
+}
